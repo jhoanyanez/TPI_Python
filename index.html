@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce</title>
+  <!-- Style css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <header>
+    <nav class="navbar open-sans-principal">
+      <div class="logo">
+        <a className="navbar-item" href="/">
+          <img src="./img/logo.png" width="80" height="80"/>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar productos">
+        <button type="button">Buscar</button>
+      </div>
+      <div class="user-actions">
+        <a href="#" class="login">Login</a>
+        <span class="material-symbols-outlined md-48">shopping_cart</span>
+      </div>
+      <button class="menu-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <!-- Sección del Banner Slider-->
+    <section class="slider-section open-sans-principal">
+      <h2>Ofertas Increíbles</h2>
+      <div class="slider-container">
+        <div class="slider">
+          <img src="./img/banner_accesories.png" alt="Imagen 1">
+          <img src="./img/banner_drones.png" alt="Imagen 2">
+          <img src="./img/banner_watches.png" alt="Imagen 3">
+          <img src="./img/banner_watches.png" alt="Imagen 3">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+    <!-- Sección de las Categorias -->
+    <section class="categories-section open-sans-principal">
+      <h2>Nuestro Top de Categorías</h2>
+      <div class="categories-container">
+        <div class="category">
+          <!-- <img src="categoria1.jpg" alt="Categoría 1"> -->
+          <span class="material-symbols-outlined soft-grey md-60">smartphone</span>
+          <h3>Smartphones</h3>
+        </div>
+        <div class="category">
+          <!-- <img src="categoria2.jpg" alt="Categoría 2"> -->
+          <span class="material-symbols-outlined soft-grey md-60">laptop_windows</span>
+          <h3>Notebooks</h3>
+        </div>
+        <div class="category">
+          <!-- <img src="categoria3.jpg" alt="Categoría 3"> -->
+          <span class="material-symbols-outlined soft-grey md-60">watch</span>
+          <h3>Watches</h3>
+        </div>
+        <div class="category">
+          <!-- <img src="categoria4.jpg" alt="Categoría 4"> -->
+          <span class="material-symbols-outlined soft-grey md-60">tablet</span>
+          <h3>Tablets</h3>
+        </div>
+        <div class="category">
+          <!-- <img src="categoria5.jpg" alt="Categoría 5"> -->
+          <span class="material-symbols-outlined soft-grey md-60">sports_esports</span>
+          <h3>Games</h3>
+        </div>
+        <div class="category">
+          <!-- <img src="categoria6.jpg" alt="Categoría 6"> -->
+          <span class="material-symbols-outlined soft-grey md-60">devices_other</span>
+          <h3>Accesorios</h3>
+        </div>
+      </div>
+    </section>
+    <!-- Sección de los Productos -->
+    <section class="products-section open-sans-principal">
+        <h2>Productos Populares</h2>
+        <div class="products-container">
+          <div class="product-card">
+            <img src="./img/product_1.png" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Descripción breve del producto.</p>
+            <span class="price">USD$1000.00</span>
+            <a href="#" class="button">Ver detalle</a>
+          </div>
+          <div class="product-card">
+            <img src="./img/product_2.png" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>Descripción breve del producto.</p>
+            <span class="price">USD$1000.00</span>
+            <a href="#" class="button">Ver detalle</a>
+          </div>
+          <div class="product-card">
+            <img src="./img/product_3.png" alt="Producto 3">
+            <h3>Producto 3</h3>
+            <p>Descripción breve del producto.</p>
+            <span class="price">USD$1000.00</span>
+            <a href="#" class="button">Ver detalle</a>
+          </div>
+          <div class="product-card">
+            <img src="./img/product_4.png" alt="Producto 4">
+            <h3>Producto 4</h3>
+            <p>Descripción breve del producto.</p>
+            <span class="price">USD$1000.00</span>
+            <a href="#" class="button">Ver detalle</a>
+          </div>
+          <div class="product-card">
+            <img src="./img/product_5.png" alt="Producto 5">
+            <h3>Producto 5</h3>
+            <p>Descripción breve del producto.</p>
+            <span class="price">USD$1000.00</span>
+            <a href="#" class="button">Ver detalle</a>
+          </div>
+          <div class="product-card">
+            <img src="./img/product_6.png" alt="Producto 6">
+            <h3>Producto 6</h3>
+            <p>Descripción breve del producto.</p>
+            <span class="price">USD$1000.00</span>
+            <a href="#" class="button">Ver detalle</a>
+          </div>
+        </div>
+    </section>
+  </main>
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-container open-sans-principal">
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="#"><i class="fas fa-phone"></i>+54 9 1123456789</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i>info@misitioweb.com</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i>Av. Sin Dirección 123</a></li>
+        </ul>
+        <ul class="social-media">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categorías Populares</h4>
+        <ul>
+          <li><a href="smartphones.html">Smartphones</a></li>
+          <li><a href="notebooks.html">Notebooks</a></li>
+          <li><a href="watches.html">Watches</a></li>
+          <li><a href="tablets.html">Tablets</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="accesories.html">Accesorios</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Información</h4>
+        <ul>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

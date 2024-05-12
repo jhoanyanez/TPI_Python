@@ -1,0 +1,374 @@
+
+/* Estilos para la Sección del NavBar*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* .logo {
+    font-size: 20px;
+    font-weight: bold;
+  } */
+
+/* 
+  .logo img {
+    width: 100%;
+    height: auto;
+  } */
+  
+
+  .nav-links {
+    display: flex;
+    font-size: 25px; /*Agrega tamaño de fuente*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin-right: 20px;
+  }
+
+  .nav-links a {
+    text-decoration:none;
+    color: #333;
+  }
+
+  .search-bar {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+
+  .search-bar button {
+    padding: 10px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .user-actions {
+    display: flex;
+  }
+
+  .user-actions a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* .menu-toggle {
+    display: none; /* Esconder el icono de menú por defecto *
+    cursor: pointer;
+  }
+
+  .menu-toggle .icon-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 2px;
+  } */
+
+  /* Estilos responsivos (media queries) */
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Esconder enlaces en pantallas pequeñas */
+    }
+
+    .search-bar {
+      flex: 1; /* Ocupar todo el ancho en pantallas pequeñas */
+    }
+
+    .menu-toggle {
+      display: flex; /* Mostrar el icono de menú en pantallas pequeñas */
+    }
+  }
+
+
+/* Estilos para el Banner*/
+
+.slider-section {
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Posicionar los botones de control */
+}
+
+.slider-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 20px;
+}
+
+.slider-container {
+  position: relative;
+  /* max-width: 800px; */
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+/* Estilos para la Sección de las Categorías*/
+
+.categories-section {
+  text-align: left;
+  padding: 20px;
+}
+.categories-section h2 {
+  font-size: 24px;
+  text-align: left;
+  padding: 20px;
+}
+
+.categories-container {
+  display: flex; /* Mostrar las categorías en fila */
+  flex-wrap: wrap; /* Permitir que las categorías se rompan en varias filas si es necesario */
+  justify-content: center; /* Centrar las categorías horizontalmente */
+  width: 90%; /* Ocupar el 90% del ancho disponible */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+.category {
+  width: 200px; /* Ajustar el ancho según sea necesario */
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer; /* Indicar que es un elemento clickable */
+}
+
+.category img {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; 
+} 
+
+.category span {
+  width: 100%;
+  height: 80px; /* Ajustar la altura según la imagen */
+  padding-top:20px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; /* Redondear la parte superior */
+}
+
+
+.category h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Estilos responsivos (media queries) */
+
+@media (max-width: 768px) {
+  .category {
+    width: 50%; /* Ocupar el 50% del ancho en pantallas pequeñas */
+    margin-bottom: 20px; /* Añadir espacio entre las categorías */
+  }
+}
+
+@media (max-width: 480px) {
+  .category {
+    width: 100%; /* Ocupar todo el ancho en pantallas muy pequeñas */
+  }
+}
+
+/* Estilos para la Sección del Footer*/
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .footer-col {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-col h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-col li {
+    margin-bottom: 10px;
+  }
+
+  .footer-col a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .social-media i {
+    font-size: 20px;
+  }
+
+  /* Estilos responsivos (media queries) */
+
+  @media (max-width: 768px) {
+    .footer-col {
+      flex: 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+      margin-bottom: 0;
+    }
+  }
+
+
+  /*Estilos para la Sección de Productos*/
+
+ .products-section {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .products-section h2 {
+    font-size: 24px;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+  }
+
+  .product-card {
+    width: 250px; /* Ajustar el ancho según sea necesario */
+    margin: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 300px; /* Ajustar la altura según la imagen */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Redondear la parte superior */
+  }
+
+  .product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .product-card p {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  .product-card .price {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .product-card .button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Estilos responsivos (media queries) */
+
+  @media (max-width: 768px) {
+    .products-container {
+      flex-direction: column; /* Mostrar las cards en una sola columna */
+    }
+  }
+
+
+  /* Estilos para las Fuentes */
+
+  .open-sans-principal {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+
+/* Estilos de los tamaños de iconos */
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.soft-grey { color: #a3a2a1; }
+
+.material-symbols-outlined.md-18 { font-size: 18px; }
+.material-symbols-outlined.md-24 { font-size: 24px; }
+.material-symbols-outlined.md-36 { font-size: 36px; }
+.material-symbols-outlined.md-48 { font-size: 48px; }
+.material-symbols-outlined.md-60 { font-size: 60px; }
+.material-symbols-outlined.soft-grey { color: #a3a2a1; }
+
