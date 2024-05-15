@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <!-- Style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Barra de Navegación -->
+    <header id="menu-container"></header>
+    <!-- Aqui pondremos el contenido de la web -->
+    <div class="container-form">
+      <div class="info-form">
+        <h2>Contactanos</h2>
+        <p>
+          ¡Nos encantaría escucharte! Si tienes preguntas, comentarios o
+          simplemente deseas decir hola, no dudes en ponerte en contacto con
+          nosotros. Estamos aquí para ayudarte en lo que necesites.
+        </p>
+        <a href="#"
+          ><i class="material-symbols-outlined md-20">call</i>011 4862-8841</a
+        >
+        <a href="#"
+          ><i class="material-symbols-outlined md-20">email</i
+          >info@ecommerce.com</a
+        >
+        <a href="#"
+          ><i class="material-symbols-outlined md-20">room</i>Palestina 1184 -
+          Buenos Aires</a
+        >
+      </div>
+      <form action="#" autocomplete="off">
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Ingrese su nombre"
+          class="campo"
+        />
+        <span class="error-message"></span>
+        <input
+          type="email"
+          name="email"
+          placeholder="Ingrese su correo"
+          class="campo"
+        />
+        <span class="error-message"></span>
+        <textarea name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+        <span class="error-message"></span>
+        <input
+          type="submit"
+          name="Enviar"
+          value="enviar mensaje"
+          class="btn-enviar"
+        />
+      </form>
+    </div>
+    <footer id="footer-container"></footer>
+    <script src="js/script.js"></script>
+    <script src="js/menuFooterLoader.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
