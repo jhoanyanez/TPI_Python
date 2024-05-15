@@ -1,0 +1,94 @@
+@import url('http://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* estilos para el contenedor principal */
+.container-form {
+    width: 100%;
+    max-width: 1100px;
+    min-height: calc(80vh - 80px);
+    margin: auto;
+    padding: 0 20px;
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+.container-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.container-form p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form a i {
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+/* estilos para los campos de texto y textarea */
+.container-form .campo,
+.container-form textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0;
+}
+
+.container-form form textarea {
+    min-width: unset; /* quitamos el ancho mínimo para que sea responsive */
+    max-width: unset; /* quitamos el ancho máximo para que sea responsive */
+    min-height: 140px;
+    max-height: 150px;
+    resize: vertical; /* prmitir que el textarea sea redimensionable verticalmente */
+}
+
+/* Estilos para el botón de enviar */
+.container-form .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0;
+    background: #4CAF50;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover {
+    background: #208524;
+}
+
+/* Estilos para los mensajes de error */
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+/* Media queries para el formulario, el footer y menu manejamos mediaqueries en sus archivos*/
+@media screen and (min-width: 768px) {
+    .container-form {
+        grid-template-columns: repeat(2, 1fr); /* vista para dos columnas en pantallas más grandes */
+    }
+}

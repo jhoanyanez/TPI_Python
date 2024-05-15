@@ -6,6 +6,7 @@
     <title>Contacto</title>
     <!-- Style css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,30 +23,59 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <style>
-      /* Estilos para el mensaje de "En Construcción" (Despues lo borramos cuando vamos agregando el contenido)*/
-      .mensaje-construccion {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin-top: 100px;
-        font-size: 24px;
-        color: #333;
-      }
-    </style>
   </head>
   <body>
     <!-- Barra de Navegación -->
     <header id="menu-container"></header>
     <!-- Aqui pondremos el contenido de la web -->
-    <div class="mensaje-construccion">
-      <h1>¡Sitio en Construcción!</h1>
-      <p>Estamos trabajando en mejorar nuestro sitio. ¡Vuelve pronto!</p>
-      <br><br>
-      <!-- Puedes agregar más información o elementos aquí -->
+    <div class="container-form">
+      <div class="info-form">
+        <h2>Contactanos</h2>
+        <p>
+          ¡Nos encantaría escucharte! Si tienes preguntas, comentarios o
+          simplemente deseas decir hola, no dudes en ponerte en contacto con
+          nosotros. Estamos aquí para ayudarte en lo que necesites.
+        </p>
+        <a href="#"
+          ><i class="material-symbols-outlined md-20">call</i>011 4862-8841</a
+        >
+        <a href="#"
+          ><i class="material-symbols-outlined md-20">email</i
+          >info@ecommerce.com</a
+        >
+        <a href="#"
+          ><i class="material-symbols-outlined md-20">room</i>Palestina 1184 -
+          Buenos Aires</a
+        >
+      </div>
+      <form action="#" autocomplete="off">
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Ingrese su nombre"
+          class="campo"
+        />
+        <span class="error-message"></span>
+        <input
+          type="email"
+          name="email"
+          placeholder="Ingrese su correo"
+          class="campo"
+        />
+        <span class="error-message"></span>
+        <textarea name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+        <span class="error-message"></span>
+        <input
+          type="submit"
+          name="Enviar"
+          value="enviar mensaje"
+          class="btn-enviar"
+        />
+      </form>
     </div>
-    <!-- Pie de página -->
     <footer id="footer-container"></footer>
     <script src="js/script.js"></script>
     <script src="js/menuFooterLoader.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
