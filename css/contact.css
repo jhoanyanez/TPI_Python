@@ -1,11 +1,13 @@
 /* estilos para el contenedor principal */
+
+
 .container-form {
     width: 100%;
     max-width: 1100px;
-    min-height: calc(80vh - 80px);
     margin: auto;
     padding: 0 20px;
     margin-top: 90px;
+    margin-bottom: 90px;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
