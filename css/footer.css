@@ -1,0 +1,58 @@
+/* Estilos para la Sección del Footer*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .footer-col {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-col h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-col li {
+    margin-bottom: 10px;
+  }
+
+  .footer-col a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .social-media i {
+    font-size: 20px;
+  }
+
+  /* Estilos responsivos (media queries) */
+
+  @media (max-width: 768px) {
+    .footer-col {
+      flex: 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+      margin-bottom: 0;
+    }
+  }
