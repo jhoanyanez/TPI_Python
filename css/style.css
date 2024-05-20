@@ -182,6 +182,11 @@
   cursor: pointer; /* Indicar que es un elemento clickable */
 }
 
+.category a {
+  text-decoration: none;
+  color: black;
+}
+
 .category img {
   width: 100%;
   height: 180px; 
