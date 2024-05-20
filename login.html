@@ -6,6 +6,7 @@
     <title>Login</title>
     <!-- Style css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,26 +23,24 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <style>
-      /* Estilos para el mensaje de "En Construcción" (Despues lo borramos cuando vamos agregando el contenido)*/
-      .mensaje-construccion {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin-top: 100px;
-        font-size: 24px;
-        color: #333;
-      }
-    </style>
   </head>
   <body>
     <!-- Barra de Navegación -->
     <header id="menu-container"></header>
-    <!-- Aqui pondremos el contenido de la web -->
-    <div class="mensaje-construccion">
-      <h1>¡Sitio en Construcción!</h1>
-      <p>Estamos trabajando en mejorar nuestro sitio. ¡Vuelve pronto!</p>
-      <br><br>
-      <!-- Puedes agregar más información o elementos aquí -->
+      <div class="login-container">
+        <h2>Iniciar sesión</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Nombre de usuario</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <p class="register-link">¿No tienes cuenta? <a href="#">Regístrate</a></p>
     </div>
     <!-- Pie de página -->
     <footer id="footer-container"></footer>
