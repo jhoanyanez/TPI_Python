@@ -1,13 +1,3 @@
-@import url('http://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-/* estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-
 /* estilos para el contenedor principal */
 .container-form {
     width: 100%;
@@ -86,7 +76,6 @@
     font-size: 14px;
 }
 
-/* Media queries para el formulario, el footer y menu manejamos mediaqueries en sus archivos*/
 @media screen and (min-width: 768px) {
     .container-form {
         grid-template-columns: repeat(2, 1fr); /* vista para dos columnas en pantallas más grandes */

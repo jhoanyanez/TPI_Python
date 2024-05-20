@@ -1,8 +1,10 @@
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70vh;
+    margin-bottom: 80px; /* Agrega un margen inferior igual a la altura estimada del footer */
 }
 
 .login-container h2 {
@@ -52,7 +54,6 @@
     color: #4CAF50;
     text-decoration: none;
 }
-
 
 @media screen and (min-width: 768px) {
     .container {
