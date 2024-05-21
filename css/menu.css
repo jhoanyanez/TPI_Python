@@ -1,0 +1,103 @@
+/* Estilos para la Sección del NavBar*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* .logo {
+    font-size: 20px;
+    font-weight: bold;
+  } */
+
+/* 
+  .logo img {
+    width: 100%;
+    height: auto;
+  } */
+  
+
+  .nav-links {
+    display: flex;
+    font-size: 20px; /*Agrega tamaño de fuente*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+
+  .nav-links li {
+    margin-right: 20px;
+  }
+
+  .nav-links a {
+    text-decoration:none;
+    color: black;
+  }
+  .nav-links li a:hover {
+    color: rgb(163, 162, 161);; /* Replace with your desired color */
+
+  }
+
+  /* .search-bar {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+
+  .search-bar button {
+    padding: 10px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  } */
+
+  .user-actions {
+    display: flex;
+  }
+
+  .user-actions a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+
+   /* .menu-toggle {
+    display: none; /* Esconder el icono de menú por defecto *
+    cursor: pointer;
+  }
+
+  .menu-toggle .icon-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 2px;
+  }  */
+
+  /* Estilos responsivos (media queries) */
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Esconder enlaces en pantallas pequeñas */
+    }
+
+    .search-bar {
+      flex: 1; /* Ocupar todo el ancho en pantallas pequeñas */
+    }
+
+    .menu-toggle {
+      display: flex; /* Mostrar el icono de menú en pantallas pequeñas */
+    }
+  }
