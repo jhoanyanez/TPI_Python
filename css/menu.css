@@ -23,10 +23,11 @@
 
   .nav-links {
     display: flex;
-    font-size: 25px; /*Agrega tamaño de fuente*/
+    font-size: 20px; /*Agrega tamaño de fuente*/
     list-style: none;
     margin: 0;
     padding: 0;
+    font-weight: bold;
   }
 
   .nav-links li {
@@ -35,10 +36,14 @@
 
   .nav-links a {
     text-decoration:none;
-    color: #333;
+    color: black;
+  }
+  .nav-links li a:hover {
+    color: rgb(163, 162, 161);; /* Replace with your desired color */
+
   }
 
-  .search-bar {
+  /* .search-bar {
     display: flex;
     margin-right: 20px;
   }
@@ -57,7 +62,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+  } */
 
   .user-actions {
     display: flex;
@@ -69,7 +74,7 @@
     color: #333;
   }
 
-  /* .menu-toggle {
+   /* .menu-toggle {
     display: none; /* Esconder el icono de menú por defecto *
     cursor: pointer;
   }
@@ -79,7 +84,7 @@
     height: 3px;
     background-color: #333;
     margin: 2px;
-  } */
+  }  */
 
   /* Estilos responsivos (media queries) */
 
