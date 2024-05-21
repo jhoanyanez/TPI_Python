@@ -101,3 +101,12 @@
       display: flex; /* Mostrar el icono de menú en pantallas pequeñas */
     }
   }
+
+  /* Estilos de los tamaños de Simbolos */
+
+.material-symbols-outlined.md-18 { font-size: 18px; }
+.material-symbols-outlined.md-24 { font-size: 24px; }
+.material-symbols-outlined.md-36 { font-size: 36px; }
+.material-symbols-outlined.md-48 { font-size: 48px; }
+.material-symbols-outlined.md-60 { font-size: 60px; }
+.material-symbols-outlined.soft-grey { color: #a3a2a1; }
