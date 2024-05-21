@@ -19,7 +19,7 @@
 .slider-container {
   position: relative;
   /* max-width: 800px; */
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -84,12 +84,21 @@
   cursor: pointer; /* Indicar que es un elemento clickable */
 }
 
+.category a {
+  text-decoration: none;
+  color: black;
+}
+
 .category img {
   width: 100%;
   height: 180px; 
   object-fit: cover;
   border-radius: 10px 10px 0 0; 
 } 
+
+.category:hover {
+  transform: scale(1.2);
+}
 
 .category span {
   width: 100%;
@@ -121,72 +130,174 @@
 }
 
 
-  /*Estilos para la Sección de Productos*/
+/*Estilos para la Sección de Productos*/
 
- .products-section {
-    text-align: center;
-    padding: 20px;
-  }
+ *{
+  box-sizing: border-box;
+} 
 
-  .products-section h2 {
-    font-size: 24px;
-    text-align: left;
-    padding: 20px;
-  }
+.products-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
 
-  .products-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-  }
+.products-section h2{
+  width: 100%;
+  /* color: #999; */
+  font-size: 24px;
+  text-align: left;
+  padding: 20px;
+}
 
+/* .product-card{
+  width: 33.333333%;
+} */
+
+.product-card{
+  /* font-family: sans-serif; */
+  width: 450px;
+  margin: 20px;
+}
+.product-card .product-img{
+  overflow: hidden;
+  height: 450px;
+  position: relative;
+  border-radius: 15px;
+}
+.product-card .product-img img{
+  width: 100%;
+  position: absolute;
+  transition: all 0.5s;
+}
+.product-card:hover .product-img img{
+  transform: scale(1.2);
+}
+.product-card .product-img .promo{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 20px;
+  background: rgb(255, 115, 0);
+  padding: 15px;
+  color: white;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.product-card .product-info{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.product-card .product-info h3{
+  margin: 0;
+}
+.product-card .product-info h3,
+.product-card .product-info strong,
+.product-card .product-info span{
+  padding: 5px 15px;
+  width: 100%;
+}
+.product-card .add-cart{
+  margin-top: 2px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+.product-card .add-cart:hover{
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+  /* Estilos responsivos (media queries) */
+
+@media (max-width: 768px) {
   .product-card {
-    width: 250px; /* Ajustar el ancho según sea necesario */
-    margin: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    flex-direction: column; /* Mostrar las cards en una sola columna */
+  }
+}
+
+
+/* Estilos para la Sección del Footer*/
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
   }
 
-  .product-card img {
-    width: 100%;
-    height: 300px; /* Ajustar la altura según la imagen */
-    object-fit: cover;
-    border-radius: 10px 10px 0 0; /* Redondear la parte superior */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
 
-  .product-card h3 {
+  .footer-col {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-col h4 {
     font-size: 18px;
-    margin: 10px 0;
-  }
-
-  .product-card p {
-    font-size: 14px;
-    margin: 0 10px;
-  }
-
-  .product-card .price {
     font-weight: bold;
     margin-bottom: 10px;
   }
 
-  .product-card .button {
-    display: block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-col li {
+    margin-bottom: 10px;
+  }
+
+  .footer-col a {
     text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    color: #fff;
+  }
+
+  .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .social-media i {
+    font-size: 20px;
   }
 
   /* Estilos responsivos (media queries) */
 
   @media (max-width: 768px) {
-    .products-container {
-      flex-direction: column; /* Mostrar las cards en una sola columna */
+    .footer-col {
+      flex: 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+      margin-bottom: 0;
     }
   }
+
+
+ 
+
+  /* Estilos para las Fuentes */
+
+  .open-sans-principal {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
 
 /* Estilos de los tamaños de iconos */
 
