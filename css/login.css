@@ -1,0 +1,67 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-bottom: 90px; /* Agrega un margen inferior igual a la altura estimada del footer */
+}
+
+.login-container h2 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.enviar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: #208524;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.register-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        height: auto;
+    }
+
+    .login-container {
+        width: 50%; /* Cambia el ancho del contenedor del formulario */
+        max-width: 400px; /* Limita el ancho máximo */
+    }
+}
