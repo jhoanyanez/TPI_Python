@@ -1,0 +1,44 @@
+.dashboard-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #4CAF50; /* Colo verde de la pagina principal */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(249, 245, 245, 0.1);
+    height: 100vh; /* ocupar todo el largo de la web */
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .sidebar a:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .content-section {
+    display: none;
+  }
+  
+  .content-section:first-child {
+    display: block;
+  }

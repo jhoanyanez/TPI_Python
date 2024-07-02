@@ -1,0 +1,38 @@
+
+  .stats {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .stat {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+  }
+  
+  .stat h2 {
+    margin: 0;
+  }
+  
+  .stat p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 0;
+  }
+  
+  /* Estilos responsivos (media queries) */
+  
+  @media (max-width: 768px) {
+    .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stat {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
