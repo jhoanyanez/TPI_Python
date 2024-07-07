@@ -124,6 +124,67 @@ def update_categoria(id_categoria):
     categoria.save_category()
     return jsonify({'message': 'categoria actualizada correctamente'})
 
+
+### Gestión de usuarios ###
+# Crear un usuario
+@app.route('/usuarios', methods=['POST'])
+def create_usuario():
+    data = request.json
+    nuevo_usuario = Usuario(nombre=data['nombre'], apellido=data['apellido'], nombre_usuario=data['nombre_usuario'], correo=data['correo'], contrasenia=data['contrasenia'], telefono=data['telefono'], fecha_nacimiento=data['fecha_nacimiento']) 
+    nuevo_usuario.save_user()
+    return jsonify({'message': 'Usuario creado correctamente'}), 201
+
+# Obtener todos los usuarios
+@app.route('/usuarios', methods=['GET'])
+def get_all_usuarios():
+    usuarios = Usuario.get_all_users()
+    return jsonify([usuario.serialize() for usuario in usuarios])
+
+# Obtener un usuario por su ID
+@app.route('/usuarios/<int:id_usuario>', methods=['GET'])
+def get_by_id_usuario(id_usuario):
+    usuario = Usuario.get_by_user_id(id_usuario)
+    if usuario:
+        return jsonify(usuario.serialize())
+    else:
+        return jsonify({'message': 'usuario no encontrado'}), 404
+
+# Eliminar un usuario por su ID
+@app.route('/usuarios/<int:id_usuario>', methods=['DELETE'])
+def delete_usuario(id_usuario):
+    usuario = Usuario.get_by_user_id(id_usuario)
+    if not usuario:
+        return jsonify({'message': 'usuario no encontrado'}), 404
+    usuario.delete_user()
+    return jsonify({'message': 'El usuario fue eliminado correctamente'})
+
+# Actualizar un usuario por su ID
+@app.route('/usuarios/<int:id_usuario>', methods=['PUT'])
+def update_usuario(id_usuario):
+    usuario = Usuario.get_by_user_id(id_usuario)
+    if not usuario:
+        return jsonify({'message': 'usuario no encontrad0'}), 404
+    data = request.json
+    usuario.nombre = data.get('nombre', usuario.nombre)
+    usuario.apellido = data.get('apellido', usuario.apellido)
+    usuario.nombre_usuario = data.get('nombre_usuario', usuario.nombre_usuario)
+    usuario.correo = data.get('correo', usuario.correo)
+    usuario.contrasenia = data.get('contrasenia', usuario.contrasenia)
+    usuario.telefono = data.get('telefono', usuario.telefono)
+    usuario.fecha_nacimiento = data.get('fecha_nacimiento', usuario.fecha_nacimiento)
+    usuario.save_user()
+    return jsonify({'message': 'usuario actualizado correctamente'})
+
+
+# Obtener los datos estadisticos de usuarios, productos y categorias
+@app.route('/dashboard', methods=['GET'])
+def get_statistics():
+    cantidad_usuarios = Usuario.get_quantity_users()
+    cantidad_categorias = Categoria.get_quantity_categories()
+    cantidad_productos = Producto.get_quantity_products()
+    return jsonify({'message': 'Estadisticas'})
+
+
 # Ejecutar la aplicación si este archivo es el punto de entrada principal
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

@@ -56,6 +56,13 @@ class Usuario:
         db.commit()
         cursor.close()
 
+    def get_quantity_users():
+        db = get_db()
+        cursor = db.cursor()
+        cursor.execute("SELECT COUNT(id_usuario) cantidad_usuarios FROM usuarios")
+        row = cursor.fetchone()
+        cursor.close()
+
     def serialize(self):
         return {
             'id_usuario': self.id_usuario,

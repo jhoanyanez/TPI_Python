@@ -45,6 +45,13 @@ class Categoria:
         db.commit()
         cursor.close()
 
+    def get_quantity_categories():
+        db = get_db()
+        cursor = db.cursor()
+        cursor.execute("SELECT COUNT(id_categoria) cantidad_categorias FROM categorias")
+        row = cursor.fetchone()
+        cursor.close()
+
     def serialize(self):
         return {
             'id_categoria': self.id_categoria,

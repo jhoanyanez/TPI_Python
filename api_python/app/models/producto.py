@@ -85,6 +85,13 @@ class Producto:
         db.commit()
         cursor.close()
 
+    def get_quantity_products():
+        db = get_db()
+        cursor = db.cursor()
+        cursor.execute("SELECT COUNT(id_producto) cantidad_productos FROM productos")
+        row = cursor.fetchone()
+        cursor.close()
+
     def serialize(self):
         return {
             'id_producto': self.id_producto,
