@@ -1,9 +1,12 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Cargar el contenido del menú desde menu.html
-    fetch('top-menu.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('menu-container').innerHTML = data;
-      });
+document.addEventListener('DOMContentLoaded', function() {
+var menuContainer = document.getElementById('menu');
 
-  });
+var menuURL = '../dashboard/menu-dashboard.html';
+
+    fetch(menuURL)
+        .then(response => response.text())
+        .then(data => {
+            menuContainer.innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el menú:', error));
+});
