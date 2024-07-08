@@ -12,7 +12,7 @@
         <div id="menu"></div>
         <div class="content">
             <h1>Productos</h1>
-            <button id="create-product-btn">Crear nuevo producto</button>
+            <button id="create-product-btn">Crear producto</button>
             <table id="products-table">
                 <thead>
                     <tr>
@@ -31,6 +31,36 @@
             </table>
         </div>
     </div>
+
+    <!-- Modal para crear nuevo producto -->
+    <div id="create-product-modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Crear Nuevo Producto</h2>
+          <form id="create-product-form">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+
+              <label for="descripcion">Descripción:</label>
+              <textarea id="descripcion" name="descripcion" required></textarea>
+
+              <label for="precio">Precio:</label>
+              <input type="number" id="precio" name="precio" required>
+
+              <label for="cantidad">Cantidad:</label>
+              <input type="number" id="cantidad" name="cantidad" required>
+
+              <label for="imagen">Imagen (URL):</label>
+              <input type="text" id="imagen" name="imagen" required>
+
+              <label for="categorias">Categorías:</label>
+              <select id="categorias" name="categorias" multiple required>
+              </select>
+
+              <button type="submit">Guardar Producto</button>
+          </form>
+      </div>
+  </div>
 
     <script src="../js/menuFooterLoaderdashboard.js"></script>
     <script src="../js/products.js"></script>
