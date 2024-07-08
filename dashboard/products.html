@@ -1,4 +1,38 @@
-<div id="products-content">
-    <h1>Productos</h1>
-    <p>Aqui iria el contenido de Productos.</p>
-  </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../css/menu-dashboard.css">
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+<body>
+    <div class="container">
+        <div id="menu"></div>
+        <div class="content">
+            <h1>Productos</h1>
+            <button id="create-product-btn">Crear nuevo producto</button>
+            <table id="products-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Imagen</th>
+                        <th>Categorías</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../js/menuFooterLoaderdashboard.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+</html>

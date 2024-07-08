@@ -1,0 +1,80 @@
+/* Contenido principal */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+/* Estilos para el botón de crear nuevo producto */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  transition: all 300ms ease;
+}
+
+button:hover {
+  background-color: #208524;
+}
+
+/* Estilos para la tabla de productos */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 15px 10px;
+  font-size: 15px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos  para la columna de Descripción para que se corte y no sea tan larga*/
+td.description {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Estilos para los botones de editar y borrar */
+.edit-btn, .delete-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
