@@ -81,7 +81,13 @@ class Producto:
     def delete_product(self):
         db = get_db()
         cursor = db.cursor()
+
+        # Eliminar las relaciones en la tabla productos_categorias
+        cursor.execute("DELETE FROM productos_categorias WHERE id_producto = %s", (self.id_producto,))
+
+        # Eliminar el producto de la tabla productos
         cursor.execute("DELETE FROM productos WHERE id_producto = %s", (self.id_producto,))
+
         db.commit()
         cursor.close()
 
@@ -105,4 +111,16 @@ class Producto:
 
     def __str__(self):
         return f"producto: {self.id_producto} - {self.nombre} {self.descripcion}"
+    
+    def update_categories(self, nuevas_categorias):
+        db = get_db()
+        cursor = db.cursor()
+    # Eliminar las categorías actuales del producto
+        cursor.execute("DELETE FROM productos_categorias WHERE id_producto = %s", (self.id_producto,))
+        db.commit()
+    # Insertar las nuevas categorías para el producto
+        for id_categoria in nuevas_categorias:
+            cursor.execute("INSERT INTO productos_categorias (id_producto, id_categoria) VALUES (%s, %s)", (self.id_producto, id_categoria))
+        db.commit()
+        cursor.close()    
 
