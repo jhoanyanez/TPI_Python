@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const categoriasSelect = document.getElementById('categorias');
 
     function fetchProducts() {
-        fetch('http://127.0.0.1:5000/productos')
+        fetch('https://comerciando.pythonanywhere.com/productos')
             .then(response => response.json())
             .then(data => {
                 tableBody.innerHTML = '';
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function fetchCategorias() {
-        fetch('http://127.0.0.1:5000/categorias')
+        fetch('https://comerciando.pythonanywhere.com/categorias')
             .then(response => response.json())
             .then(data => {
                 categoriasSelect.innerHTML = '';
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        fetch('http://127.0.0.1:5000/productos', {
+        fetch('https://comerciando.pythonanywhere.com/productos', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
