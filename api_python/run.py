@@ -71,14 +71,21 @@ def delete_producto(id_producto):
 def update_producto(id_producto):
     producto = Producto.get_by_product_id(id_producto)
     if not producto:
-        return jsonify({'message': 'producto no encontrado'}), 404
+        return jsonify({'message': 'Producto no encontrado'}), 404
+
     data = request.json
     producto.nombre = data.get('nombre', producto.nombre)
     producto.descripcion = data.get('descripcion', producto.descripcion)
     producto.precio = data.get('precio', producto.precio)
     producto.cantidad = data.get('cantidad', producto.cantidad)
+    producto.imagen = data.get('imagen', producto.imagen)
+
+    # Actualizar las categorías asociadas al producto
+    nuevas_categorias = data.get('categorias', [])
+    producto.update_categories(nuevas_categorias)
+
     producto.save_product()
-    return jsonify({'message': 'producto actualizado correctamente'})
+    return jsonify({'message': 'Producto actualizado correctamente'})
 
 ### Gestión de categorias ###
 # Crear un categoria
