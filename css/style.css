@@ -136,50 +136,55 @@
 
 /*Estilos para la Sección de Productos*/
 
- *{
+* {
   box-sizing: border-box;
-} 
+}
 
 .products-section {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   padding: 50px 0;
 }
 
-.products-section h2{
+.products-section h2 {
   width: 100%;
-  /* color: #999; */
   font-size: 24px;
   text-align: left;
   padding: 20px;
 }
 
-/* .product-card{
-  width: 33.333333%;
-} */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
 
-.product-card{
-  /* font-family: sans-serif; */
+.product-card {
+  flex: 0 1 calc(25% - 16px);
+  box-sizing: border-box;
+  margin-bottom: 16px;
   width: 450px;
   margin: 20px;
 }
-.product-card .product-img{
+
+.product-card .product-img {
   overflow: hidden;
   height: 450px;
   position: relative;
   border-radius: 15px;
 }
-.product-card .product-img img{
+
+.product-card .product-img img {
   width: 100%;
   position: absolute;
   transition: all 0.5s;
 }
-.product-card:hover .product-img img{
+
+.product-card:hover .product-img img {
   transform: scale(1.2);
 }
-.product-card .product-img .promo{
+
+.product-card .product-img .promo {
   position: absolute;
   top: 10px;
   left: 0;
@@ -191,22 +196,25 @@
   border-top-right-radius: 25px;
 }
 
-.product-card .product-info{
+.product-card .product-info {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
 }
-.product-card .product-info h3{
+
+.product-card .product-info h3 {
   margin: 0;
 }
+
 .product-card .product-info h3,
 .product-card .product-info strong,
-.product-card .product-info span{
+.product-card .product-info span {
   padding: 5px 15px;
   width: 100%;
 }
-.product-card .add-cart{
+
+.product-card .add-cart {
   margin-top: 2px;
   text-decoration: none;
   color: white;
@@ -215,10 +223,17 @@
   border: 1px solid black;
   border-radius: 25px;
 }
-.product-card .add-cart:hover{
+
+.product-card .add-cart:hover {
   color: black;
   background-color: transparent;
   border: 1px solid black;
+}
+.product-info h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
   /* Estilos responsivos (media queries) */
