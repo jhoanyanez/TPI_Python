@@ -1,0 +1,86 @@
+/* Estilos para la sección de productos del inicio products.html*/
+.products-section {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.product-card {
+    flex: 0 1 calc(25% - 16px);
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    width: 450px;
+    margin: 20px;
+}
+
+.product-card .product-img {
+    overflow: hidden;
+    height: 450px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.product-card .product-img img {
+    width: 100%;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.product-card:hover .product-img img {
+    transform: scale(1.2);
+}
+
+.product-card .product-img .promo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 20px;
+    background: rgb(255, 115, 0);
+    padding: 15px;
+    color: white;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.product-card .product-info {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.product-info h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.product-card .product-info h3,
+.product-card .product-info strong,
+.product-card .product-info span {
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.product-card .add-cart {
+    margin-top: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.product-card .add-cart:hover {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+}
