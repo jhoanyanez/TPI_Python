@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/detail.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,30 +25,18 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <style>
-      /* Estilos para el mensaje de "En Construcción" (Despues lo borramos cuando vamos agregando el contenido)*/
-      .mensaje-construccion {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin-top: 100px;
-        font-size: 24px;
-        color: #333;
-      }
-    </style>
   </head>
   <body>
     <!-- Barra de Navegación -->
     <header id="menu-container"></header>
-    <!-- Aqui pondremos el contenido de la web -->
-    <div class="mensaje-construccion">
-      <h1>¡Sitio en Construcción!</h1>
-      <p>Estamos trabajando en mejorar nuestro sitio. ¡Vuelve pronto!</p>
-      <br><br>
-      <!-- Puedes agregar más información o elementos aquí -->
-    </div>
+ <!-- Contenedor Principal -->
+ <div id="product-detail-container" class="product-detail-container">
+  <!-- El contenido se cargará dinámicamente desde JavaScript -->
+</div>
     <!-- Pie de página -->
     <footer id="footer-container"></footer>
     <script src="js/script.js"></script>
     <script src="js/menuFooterLoader.js"></script>
+    <script src="js/detail.js"></script>
   </body>
 </html>
