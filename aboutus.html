@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre Nosotros</title>
-    <!-- Style css -->
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Icons -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <style>
-      /* Estilos para el mensaje de "En Construcción" (Despues lo borramos cuando vamos agregando el contenido)*/
-      .mensaje-construccion {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin-top: 100px;
-        font-size: 24px;
-        color: #333;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Barra de Navegación -->
-    <header id="menu-container"></header>
-    <!-- Aqui pondremos el contenido de la web -->
-    <div class="mensaje-construccion">
-      <h1>¡Sitio en Construcción!</h1>
-      <p>Estamos trabajando en mejorar nuestro sitio. ¡Vuelve pronto!</p>
-      <br><br>
-      <!-- Puedes agregar más información o elementos aquí -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nosotros</title>
+  <!-- Style css -->
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/aboutus.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Barra de Navegación -->
+  <header id="menu-container"></header>
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div>
+          <!-- Aquí va la descripción que te proporcioné -->
+          <h2 class="text-center mb-4">Conócenos</h2>
+          <p>
+            ¡Bienvenido a nuestro espacio! Somos un equipo de seis estudiantes entusiastas del curso Codo a Codo 4.0 de
+            Python Fullstack, unidos por nuestra pasión por la tecnología y el desarrollo web.
+          </p>
+          <p>
+            En nuestro proyecto, aplicamos metodologías ágiles para gestionar eficazmente nuestro desarrollo. Nos
+            enfocamos en una API robusta construida con Flask y una base de datos MySQL alojada en PythonAnywhere. Esta
+            arquitectura nos proporciona la flexibilidad y el rendimiento necesarios para cumplir con nuestras metas.
+          </p>
+          <p>
+            En el frontend, hemos utilizado HTML5, CSS3, y JavaScript para crear una interfaz amigable y atractiva.
+            Bootstrap nos ha sido de gran ayuda para asegurar la responsividad y la consistencia visual en todos
+            nuestros dispositivos. Todo nuestro frontend está desplegado en GitHub Pages, lo que nos permite compartir
+            nuestro trabajo de manera accesible y eficiente.
+          </p>
+          <p>
+            Una de nuestras fortalezas como equipo radica en nuestra capacidad para trabajar en todas las áreas del
+            desarrollo. Todos los miembros del equipo han contribuido tanto en el frontend como en el backend, lo que
+            nos ha permitido aprender y crecer juntos en el proceso.
+          </p>
+        </div>
+      </div>
     </div>
-    <!-- Pie de página -->
-    <footer id="footer-container"></footer>
-    <script src="js/menuFooterLoader.js"></script>
-  </body>
+    <div class="d-flex justify-content-center row" id="integrantes-container"></div>
+  </div>
+  </div>
+
+  </div>
+  <!-- Pie de página -->
+  <footer id="footer-container"></footer>
+  <script src="js/menuFooterLoader.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/aboutus.js"></script>
+</body>
+
 </html>
