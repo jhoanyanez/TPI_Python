@@ -1,0 +1,44 @@
+[
+    {
+        "nombre": "Jhoan Yanez",
+        "rol": "Desarrollador full-stack",
+        "foto": "jhoan.jpg",
+        "github": "jhoanyanez",
+        "linkedin": "jhoan-yanez-regalado-750bb919"
+    },
+    {
+        "nombre": "Federico Ocaranza",
+        "rol": "Desarrollador full-stack",
+        "foto": "fede1.jpg",
+        "github": "fede9087",
+        "linkedin": "federico-ocaranza"
+    },
+    {
+        "nombre": "Alejandro Piris",
+        "rol": "Desarrollador full-stack",
+        "foto": "ale.jpg",
+        "github": "AlePiris",
+        "linkedin": "alejandro-piris-4aa20520b"
+    },
+    {
+        "nombre": "Pablo Masciangelo",
+        "rol": "Desarrollador full-stack",
+        "foto": "user0.jpg",
+        "github": "#",
+        "linkedin": "#"
+    },
+    {
+        "nombre": "Milagros Martínez",
+        "rol": "Desarrolladora full-stack",
+        "foto": "milagros.jpg",
+        "github": "milytinez",
+        "linkedin": "milagrosm"
+    },
+    {
+        "nombre": "Marcelo Rodriguez",
+        "rol": "Desarrollador full-stack",
+        "foto": "marcelo.jpg",
+        "github": "Marce1965",
+        "linkedin": "marcelo-rodriguez-b3b38b163"
+    }
+]

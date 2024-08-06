@@ -218,16 +218,15 @@
   margin-top: 2px;
   text-decoration: none;
   color: white;
-  background-color: black;
+  background-color: #4CAF50;
   padding: 15px;
-  border: 1px solid black;
   border-radius: 25px;
 }
 
 .product-card .add-cart:hover {
-  color: black;
+  color: #208524;
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid #208524;
 }
 .product-info h3 {
   overflow: hidden;

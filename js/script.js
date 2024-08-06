@@ -30,12 +30,12 @@ setInterval(() => {
 }, 3000); // Cambiar la imagen cada 3 segundos
 
 
-// Obtener los últimos 10 productos  y actualizar la sección de productos
+// Obtener los últimos 6 productos  y actualizar la sección de productos
 fetch('https://comerciando.pythonanywhere.com/productos')
     .then(response => response.json())
     .then(data => {
       const productContainer = document.querySelector('.products-container');
-      data.slice(-10).forEach(product => {
+      data.slice(-6).forEach(product => {
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
         productCard.innerHTML = `
